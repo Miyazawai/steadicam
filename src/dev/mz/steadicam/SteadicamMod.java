@@ -45,6 +45,7 @@ public class SteadicamMod implements ClientModInitializer {
 		}
 
 		ClientLifecycleEvents.CLIENT_STARTED.register(mc -> pendingStartup = true);
+		ClientLifecycleEvents.CLIENT_STOPPING.register(SteadicamMod::onClientStopping);
 		ClientTickEvents.END_CLIENT_TICK.register(SteadicamMod::onEndTick);
 
 		LOGGER.info("稳镜 Steadicam 已加载：开关={} 档位={} 参考线样式={}",
@@ -60,6 +61,16 @@ public class SteadicamMod implements ClientModInitializer {
 		}
 		if (toggleKey != null && toggleKey.consumeClick()) {
 			toggle(mc);
+		}
+	}
+
+	private static void onClientStopping(Minecraft mc) {
+		if (!SteadicamConfig.current.enabled) {
+			return;
+		}
+		int n = Tiers.revertOwnFootprint(mc);
+		if (n > 0) {
+			LOGGER.info("稳镜：退出前已还原 {} 项设置，删掉本 mod 不会留下改动", n);
 		}
 	}
 

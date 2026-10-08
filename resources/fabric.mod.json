@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "steadicam",
-  "version": "1.0.0+26.2",
+  "version": "1.0.1+26.2",
   "name": "稳镜 Steadicam（抗3D眩晕）",
   "description": "给容易 3D 眩晕的玩家：一键关掉视角摇晃、受伤歪屏、FOV 缩放、传送门/恶心屏幕扭曲与暗角，并在屏幕上画一条不动的地平线参考线。可随时一键关闭并逐项还原原设置。纯客户端，不写任何 mixin。",
   "authors": [

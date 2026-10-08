@@ -6,7 +6,7 @@ MC_HOME="/c/Users/Miyazawa i/Desktop/mc/.minecraft"
 PACK_DIR="$MC_HOME/versions/AC26.2基础整合包Radical Version"
 JAVA_BIN="/c/Users/Miyazawa i/AppData/Roaming/.minecraft/runtime/java-runtime-epsilon/bin"
 MOD_ID="steadicam"
-VERSION="1.0.0+26.2"
+VERSION="1.0.1+26.2"
 
 cd "$(dirname "$0")"
 ROOT="$PWD"

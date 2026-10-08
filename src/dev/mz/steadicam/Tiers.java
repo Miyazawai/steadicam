@@ -90,6 +90,31 @@ public final class Tiers {
 		apply(mc, tier);
 	}
 
+	// Undo only our own footprint: a key she has since changed by hand is left alone.
+	public static int revertOwnFootprint(Minecraft mc) {
+		SteadicamConfig c = SteadicamConfig.current;
+		Map<SteadicamOption, Object> applied = valuesOf(Tier.of(c.tier));
+		int n = 0;
+		for (String key : new ArrayList<>(c.appliedKeys)) {
+			SteadicamOption o = SteadicamOption.byJsonKey(key);
+			if (o == null) {
+				continue;
+			}
+			Object ours = applied.get(o);
+			Object baseline = SteadicamConfig.baselineOf(o);
+			if (ours != null && baseline != null && ours.equals(o.get(mc.options))) {
+				o.set(mc.options, baseline);
+				n++;
+			}
+		}
+		if (n > 0) {
+			mc.options.save();
+		}
+		c.appliedKeys.clear();
+		SteadicamConfig.save(SteadicamMod.LOGGER);
+		return n;
+	}
+
 	// Only the keys we actually wrote go back; her own unrelated edits stay untouched.
 	private static int revertApplied(Minecraft mc) {
 		SteadicamConfig c = SteadicamConfig.current;

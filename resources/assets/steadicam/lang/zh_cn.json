@@ -1,0 +1,23 @@
+{
+  "key.steadicam.toggle": "开关稳镜（抗3D眩晕）",
+  "key.category.steadicam.main": "稳镜 Steadicam",
+  "steadicam.menu.title": "稳镜（抗3D眩晕）",
+  "steadicam.option.enabled": "抗眩晕总开关",
+  "steadicam.option.tier": "防眩晕档位",
+  "steadicam.tier.weak": "弱",
+  "steadicam.tier.standard": "标准",
+  "steadicam.tier.strong": "最强",
+  "steadicam.option.hud": "参考线",
+  "steadicam.hud.style.0": "关",
+  "steadicam.hud.style.1": "只画地平线",
+  "steadicam.hud.style.2": "地平线 + 中心锚点",
+  "steadicam.option.opacity": "线条浓度",
+  "steadicam.button.apply": "重新应用当前档位",
+  "steadicam.button.restore": "恢复原设置并关闭",
+  "steadicam.hud.on": "稳镜：已开启，视角不再晃动",
+  "steadicam.hud.off": "稳镜：已关闭，原设置已逐项恢复",
+  "steadicam.hud.first_run": "稳镜已开启：视角不再晃动。按 F7 可随时开关，或在 模组菜单→稳镜 恢复原设置",
+  "steadicam.advice": "另外这些要她自己关（本 mod 不碰）：着色器里的景深和动态模糊、鼠标灵敏度、用窗口化而不是全屏、离屏幕远一点",
+  "steadicam.tooltip.tier": "弱：只关视角摇晃、受伤歪屏、FOV 缩放\n标准：再加屏幕扭曲、暗角、黑暗效果\n最强：再加帧率上限 120、附魔光效、区块淡入、矿车翻转",
+  "steadicam.tooltip.hud": "一条不动的水平线，给大脑当地平线锚点\nF1 隐藏 HUD 时一起隐藏"
+}

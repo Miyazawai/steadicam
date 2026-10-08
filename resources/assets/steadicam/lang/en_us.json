@@ -1,0 +1,23 @@
+{
+  "key.steadicam.toggle": "Toggle Steadicam",
+  "key.category.steadicam.main": "Steadicam",
+  "steadicam.menu.title": "Steadicam (anti motion sickness)",
+  "steadicam.option.enabled": "Anti-nausea master switch",
+  "steadicam.option.tier": "Preset tier",
+  "steadicam.tier.weak": "Weak",
+  "steadicam.tier.standard": "Standard",
+  "steadicam.tier.strong": "Strongest",
+  "steadicam.option.hud": "Reference line",
+  "steadicam.hud.style.0": "Off",
+  "steadicam.hud.style.1": "Horizon only",
+  "steadicam.hud.style.2": "Horizon + center anchor",
+  "steadicam.option.opacity": "Line opacity",
+  "steadicam.button.apply": "Re-apply current tier",
+  "steadicam.button.restore": "Restore original settings",
+  "steadicam.hud.on": "Steadicam on: view no longer sways",
+  "steadicam.hud.off": "Steadicam off: original settings restored",
+  "steadicam.hud.first_run": "Steadicam is on. Press F7 to toggle anytime, or use Mod Menu > Steadicam to restore your settings",
+  "steadicam.advice": "These are hers to change (this mod never touches them): shader depth-of-field and motion blur, mouse sensitivity, windowed mode, sitting farther from the screen",
+  "steadicam.tooltip.tier": "Weak: view bobbing, hurt tilt, FOV punch\nStandard: also screen distortion, vignette, darkness\nStrongest: also 120 fps cap, enchant glint, chunk fade, minecart roll",
+  "steadicam.tooltip.hud": "A level line that never moves, so the brain has a horizon\nHidden together with the HUD (F1)"
+}

@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "steadicam",
+  "version": "1.0.0+26.2",
+  "name": "稳镜 Steadicam（抗3D眩晕）",
+  "description": "给容易 3D 眩晕的玩家：一键关掉视角摇晃、受伤歪屏、FOV 缩放、传送门/恶心屏幕扭曲与暗角，并在屏幕上画一条不动的地平线参考线。可随时一键关闭并逐项还原原设置。纯客户端，不写任何 mixin。",
+  "authors": [
+    "Miyazawai"
+  ],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "dev.mz.steadicam.SteadicamMod"
+    ],
+    "modmenu": [
+      "dev.mz.steadicam.SteadicamModMenuApi"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.19.0",
+    "minecraft": "~26.2",
+    "java": ">=25",
+    "fabric-rendering-v1": ">=25.3.0",
+    "fabric-lifecycle-events-v1": ">=4.1.0",
+    "fabric-key-mapping-api-v1": ">=2.0.0"
+  },
+  "suggests": {
+    "modmenu": "*"
+  }
+}
